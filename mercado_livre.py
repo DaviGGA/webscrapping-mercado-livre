@@ -6,8 +6,8 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 
 url_base = "https://lista.mercadolivre.com.br/"
-product = input('Which product do you desire?')
-pages = int(input('How much pages do you want to see?'))
+product = input('Product name?')
+pages = int(input('Number of pages you want to search?'))
 
 options = Options()
 options.add_argument("--headless")
