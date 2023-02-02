@@ -10,8 +10,11 @@ product = input('Product name?')
 pages = int(input('Number of pages you want to search?'))
 
 options = Options()
+
+# Comment this if you want to see the browser
 options.add_argument("--headless")
-options.add_experimental_option("detach", True)
+
+# options.add_experimental_option("detach", True)
 
 browser = webdriver.Chrome(options=options)
 browser.get(url_base + product)
